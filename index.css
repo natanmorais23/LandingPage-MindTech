@@ -1,0 +1,82 @@
+:root{
+    --text-color: #35415d;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    font-family: "Jetbrains Mono";
+    background-image: url("./background.png");
+    background-size: cover;
+    background-position: top;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    height: 12vw;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(255,255,255,0));
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 9vw;
+}
+
+a{
+    font-size: 2vw;
+    font-weight: 700;
+    color: white;
+}
+
+nav{
+    display: flex;
+    gap: 5vw;
+}
+
+/* Banner */
+
+.banner{
+    height: 45vw;
+    display: flex;
+    align-items: center;
+}
+
+.div_banner{
+    width: 35vw;
+    margin-left: 5vw;
+}
+
+.div_banner h1{
+    color: var(--text-color);
+    letter-spacing: -0.5vw;
+    font-weight: 900;
+    font-size: 7vw;
+}
+
+.div_banner p{
+    color: var(--text-color);
+    font-size: 1.9vw;
+    margin-bottom: 3vw;
+}
+
+.div_banner button{
+    display: flex;
+    width: 20vw;
+    height: 5vw;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background: linear-gradient(270deg, rgba(0,66,255,1), rgba(53,65,93,1));
+    border: none;
+    border-radius: 3vw;
+    color: white;
+    font-size: 1.9vw;
+}
