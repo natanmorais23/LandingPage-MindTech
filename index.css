@@ -20,20 +20,27 @@ body{
 
 header{
     display: flex;
-    height: 12vw;
+    padding: 1rem;
+    height: 20vh;
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(255,255,255,0));
     justify-content: space-around;
     align-items: center;
 }
 
 .logo{
-    width: 9vw;
+    width: 6vw;
 }
 
 a{
-    font-size: 2vw;
-    font-weight: 700;
+    font-size: 1.4vw;
+    font-weight: 600;
     color: white;
+}
+
+a:hover{
+    font-weight: 900;
+    scale: 1.05;
+    transition: 0.5s;
 }
 
 nav{
@@ -44,33 +51,40 @@ nav{
 /* Banner */
 
 .banner{
-    height: 45vw;
+    height: 80vh;
     display: flex;
+    width: 50%;
+    justify-content: center;
     align-items: center;
 }
 
 .div_banner{
     width: 35vw;
-    margin-left: 5vw;
+    margin-bottom: 10vh;
 }
 
 .div_banner h1{
     color: var(--text-color);
-    letter-spacing: -0.5vw;
     font-weight: 900;
-    font-size: 7vw;
+    font-size: 5.6vw;
 }
 
 .div_banner p{
+    text-align: justify;
+    width: 30vw;
     color: var(--text-color);
-    font-size: 1.9vw;
-    margin-bottom: 3vw;
+    font-size: 1.5vw;
+    margin-bottom: 2vw;
+}
+
+.button{
+    width: 30vw;
 }
 
 .div_banner button{
     display: flex;
-    width: 20vw;
-    height: 5vw;
+    width: 18vw;
+    height: 4vw;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -78,5 +92,12 @@ nav{
     border: none;
     border-radius: 3vw;
     color: white;
-    font-size: 1.9vw;
+    font-size: 1.4vw;
 }
+
+button:hover{
+    width: 20vw;
+    transition: 0.9s;
+}
+
+/* Header e banner mobile */
