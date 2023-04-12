@@ -44,7 +44,7 @@ a{
 a:hover{
     font-weight: 900;
     scale: 1.05;
-    transition: 0.5s;
+    transition: 0.5s;    
 }
 
 nav{
@@ -85,7 +85,10 @@ nav{
     width: 30vw;
 }
 
-.div_banner button{
+
+    
+
+.div_banner .button-hover{
     cursor: pointer;
     display: flex;
     width: 18vw;
@@ -101,6 +104,7 @@ nav{
     animation: changeColor 5s infinite;
 }
 
+
 @keyframes changeColor {
     0% {
         background-color: rgba(0,66,255,1);
@@ -113,7 +117,8 @@ nav{
     }
   }
 
-button:hover{
+.button-hover:hover{
+
     width: 20vw;
     transition: 0.9s linear;
 }
@@ -141,6 +146,7 @@ button:hover{
 }
 
 /* Header e banner mobile */
+
 
 
 
@@ -187,3 +193,139 @@ button:hover{
     flex-direction: column;
     justify-content: center;
 }
+
+/* COMEÇO GRID DOS CONTATOS */
+
+.contato{
+    width: 100%;
+    background-color: #35415d;
+    align-content: center;
+    align-items: center;
+    padding: 5vw;
+}
+
+.grid-shadow{
+    box-shadow: 10px 10px black;
+}
+.grid-contato {
+    background-color: aliceblue;
+    display: grid;   
+    padding: 1%;
+    align-content: center;
+    border-radius: 1vw;
+    align-items: center;
+}
+
+.grid-template-columns{
+    grid-template-columns: 200fr 200fr;
+}
+
+.grid-template-rows{
+    grid-template-rows: 2fr 1fr 2fr 2fr 2fr 2fr;
+
+}
+
+.grid-items{
+    margin: 5px;
+	background: aliceblue;	
+}
+
+.title-contato{
+    color: #35415d;
+    font-weight: bold;
+    font-size: 1.7vw;
+    text-align: center;
+}
+.text-contato{
+    text-align: center;
+    font-size: 1.5vw;
+    color: #5c6f9a;
+    margin: 0 auto;
+    margin-left: 1vw;
+    float: left;
+}
+
+.button-contact{
+    padding: 0.75vw;
+    margin: auto;
+    max-width: 15vw;
+    transition: 0.6s;
+}
+.button-contact:hover{
+    cursor: pointer;
+    transition: 0.6s;
+    opacity: 0.5;
+}
+
+.mail-box{
+    background-color: white;
+    border-radius: 1vw;
+    align-items: center;
+    height: 100%;
+
+}
+
+.rows-mail-contact{
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr 2fr 4.5fr 2fr;
+
+}
+
+.title-mail-box{
+    color: rgb(53, 65, 93);
+    font-weight: bold;
+    font-size: 1.7vw;
+    text-align: left;
+    margin: 1.5vw;
+    margin-bottom: 0vw;
+}
+
+.text-mail-box{
+    color: #5c6f9a;
+    font-size: 1.1vw;
+    text-align: left;
+    margin: 1vw;
+    margin-left: 1.5vw;
+    margin-top: 0.5vw;
+}
+
+.mail-contact-subcolumn{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.input-mail-box{
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5vw;
+    border: none;
+    margin: 0.5vw;
+    padding: 0.8vw;
+    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.2)
+    
+}
+.button-sendmail{
+    text-decoration: white;
+    background-color: #35415d;
+    width: 10vw;
+    height: 2.3vw;
+    border-radius: 1vw;
+    border: none;
+    margin: 0.2vw auto;
+    margin-right: 1.5vw;
+    transition: 0.5s;
+    
+}
+
+.button-sendmail:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.button-sendmail-text{
+    color: white;
+    font-size: 1vw;
+}
+
+/* FIM DA GRID DOS CONTATOS */
+
