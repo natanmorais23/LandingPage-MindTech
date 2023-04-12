@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --text-color: #35415d;
 }
@@ -12,9 +16,10 @@
 body{
     font-size: 100%;
     font-family: "Jetbrains Mono";
-    background-image: url("./background.png");
-    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0)), url(./background.png);
+    background-size: 100% 100vh;
     background-position: top;
+    background-repeat: no-repeat;
     min-height: 100vh;
 }
 
@@ -22,7 +27,6 @@ header{
     display: flex;
     padding: 1rem;
     height: 20vh;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(255,255,255,0));
     justify-content: space-around;
     align-items: center;
 }
@@ -82,22 +86,104 @@ nav{
 }
 
 .div_banner button{
+    cursor: pointer;
     display: flex;
     width: 18vw;
     height: 4vw;
     align-items: center;
     justify-content: center;
     margin: auto;
-    background: linear-gradient(270deg, rgba(0,66,255,1), rgba(53,65,93,1));
+    /*background: linear-gradient(270deg, rgba(0,66,255,1), rgba(53,65,93,1));*/
     border: none;
     border-radius: 3vw;
     color: white;
     font-size: 1.4vw;
+    animation: changeColor 5s infinite;
 }
+
+@keyframes changeColor {
+    0% {
+        background-color: rgba(0,66,255,1);
+    }
+    50% {
+        background-color: rgba(53,65,93,1);
+    }
+    100% {
+        background-color:  rgba(0,66,255,1);
+    }
+  }
 
 button:hover{
     width: 20vw;
-    transition: 0.9s;
+    transition: 0.9s linear;
+}
+
+.scroll{
+    cursor: pointer;
+    color: black;
+    justify-content: center;
+    left: 47.7%;
+    bottom: 5vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scroll h5{
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+.scroll i{
+    font-size: 1.3vw;
 }
 
 /* Header e banner mobile */
+
+
+
+
+/* Service */
+
+.services{
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.service_box{
+    display: flex;
+    background-color: wheat;
+    height: 55vw;
+    box-shadow: 5px 9px 20px -8px rgba(0,0,0,0.5);
+    padding: 2rem;
+    border-radius: 7vw;
+    width: 80vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services h1{
+    text-transform: uppercase;
+}
+
+.services_content{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 3vw;
+    justify-content: space-around;
+}
+
+.minibox{
+    text-align: center;
+    display: flex;
+    width: 20vw;
+    height: 20vw;
+    border: solid;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
