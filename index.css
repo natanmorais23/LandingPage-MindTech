@@ -149,7 +149,9 @@ nav{
     text-align: center;
     font-size: 1.5vw;
     color: #5c6f9a;
-
+    margin: 0 auto;
+    margin-left: 1vw;
+    float: left;
 }
 
 .button-contact{
