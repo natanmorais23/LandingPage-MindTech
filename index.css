@@ -263,6 +263,7 @@ nav{
     border-radius: 1vw;
     align-items: center;
     height: 100%;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.44);
 
 }
 
@@ -301,10 +302,32 @@ nav{
     border-radius: 0.5vw;
     border: none;
     margin: 0.5vw;
-    padding: 0.8vw;
-    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.2)
-    
+    padding: 1vw;
+    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.2)    
 }
+
+.input-mail-box-name{
+    margin-left: 1.5vw;   
+
+}
+
+.input-mail-box-phone{
+    margin-right: 1.5vw;
+
+}
+
+.input-mail-box-email{
+    margin-right: 1.5vw;
+    margin-left: 1.5vw;
+    max-height: 3vw;
+}
+
+.textarea-contato{
+    margin-right: 1.5vw;
+    margin-left: 1.5vw;
+    text-align:top;
+}
+
 .button-sendmail{
     text-decoration: white;
     background-color: #35415d;
@@ -316,6 +339,26 @@ nav{
     margin-right: 1.5vw;
     transition: 0.5s;
     
+}
+
+.hr-contatos{
+    width: 85%;
+    margin:auto;
+    border: 0.7px solid rgb(54, 65, 92);
+}
+
+.div-contatos-icon-contato{
+    align-content:center;
+    align-items: center;
+    display: flex;
+}
+
+.icon-contatos{
+    color: #35415d;
+    float: left;
+    margin: 0 auto;
+    margin-right: 0vw;
+    font-size: 1.5vw;
 }
 
 .button-sendmail:hover{
