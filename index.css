@@ -308,24 +308,26 @@ nav{
 
 .input-mail-box-name{
     margin-left: 1.5vw;   
+    font-size: 1vw;
 
 }
 
 .input-mail-box-phone{
     margin-right: 1.5vw;
-
+    font-size: 1vw;
 }
 
 .input-mail-box-email{
     margin-right: 1.5vw;
     margin-left: 1.5vw;
     max-height: 3vw;
+    font-size: 1vw;
 }
 
 .textarea-contato{
     margin-right: 1.5vw;
     margin-left: 1.5vw;
-    text-align:top;
+    font-size: 1vw;
 }
 
 .button-sendmail{
