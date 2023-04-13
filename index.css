@@ -531,3 +531,41 @@ nav{
     color: grey;
 }
 /* --- ---*/
+
+/* COMEÇO FOOTER */
+.footer-content{
+    width: 100%;
+    background-color: #1a2235;
+}
+.footer-rows{
+    padding-top: 0.3vw;
+    padding-bottom: 0.7vw;
+    align-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 2fr 0.5fr 1fr;
+}
+.footer-sobre{
+    margin: auto;
+}
+.footer-hr{
+    margin: auto;
+    width: 90%;
+}
+.footer-rights-text{
+    color: aliceblue;
+    margin: 0.5vw auto;
+    align-self: center;
+    font-size: 1vw;
+}
+
+.footer-sobre{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.logo-footer{
+    max-width: 4vw;
+}
+/* FIM FOOTER */
