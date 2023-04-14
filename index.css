@@ -268,6 +268,9 @@ nav{
     font-size: 1.7vw;
     text-align: center;
 }
+
+
+
 .text-contato{
     text-align: center;
     font-size: 1.5vw;
@@ -351,7 +354,6 @@ nav{
 .input-mail-box-email{
     margin-right: 1.5vw;
     margin-left: 1.5vw;
-    max-height: 3vw;
     font-size: 1vw;
 }
 
@@ -402,6 +404,81 @@ nav{
 .button-sendmail-text{
     color: white;
     font-size: 1vw;
+}
+
+@media screen and (max-width: 992px) {
+    .grid-template-columns{
+        grid-template-columns: 200fr;
+        grid-template-rows: 125fr 200fr;
+    }
+
+    .title-contato{
+        font-size: 2em;
+    }
+    .icon-contatos{
+        font-size:2em;
+    }
+    .text-contato{
+        font-size: 1.4em;
+    }
+    .button-contact{
+        max-width: 20em;
+    }
+    .title-mail-box{
+        font-size: 2em;
+    }
+
+    .text-mail-box{
+        font-size: 1.6em;
+    }
+    .input-mail-box{
+        padding: 0.6em;
+        font-size: 1.6em;
+    }
+    .mail-contact-subcolumn{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: normal;
+    }
+    .input-mail-box-name{
+        margin: 0.4em;
+        margin-top: 0em;
+
+    }
+    .input-mail-box-phone{        
+        margin: 0.4em;
+        margin-top: 0em;
+    }
+    .input-mail-box-email{
+        margin: 0.4em;
+        margin-top: 0em;
+        
+    }
+    .rows-mail-contact{        
+        grid-template-rows: 1fr 2fr 3.1fr 1.6fr 3fr 1fr;                
+    }
+    .mail-box{
+        padding: 3em;
+    }
+    .button-sendmail{
+        width: 9em;
+        height: 4em;
+        margin: 0.5em auto;
+    }
+    .button-sendmail-text{
+        font-size: 1.6em;
+    }
+    .contato{
+        padding: 4em;
+    }
+    .textarea-contato{
+        margin: 0.4em;
+        font-size: 1.6em;
+        font-family: "Jetbrains Mono";
+    }
+    .grid-items{
+        padding: 1em;
+    }
 }
 
 /* FIM DA GRID DOS CONTATOS */
@@ -485,3 +562,41 @@ nav{
     color: grey;
 }
 /* --- ---*/
+
+/* COMEÇO FOOTER */
+.footer-content{
+    width: 100%;
+    background-color: #1a2235;
+}
+.footer-rows{
+    padding-top: 0.3vw;
+    padding-bottom: 0.7vw;
+    align-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 2fr 0.5fr 1fr;
+}
+.footer-sobre{
+    margin: auto;
+}
+.footer-hr{
+    margin: auto;
+    width: 90%;
+}
+.footer-rights-text{
+    color: aliceblue;
+    margin: 0.5vw auto;
+    align-self: center;
+    font-size: 1vw;
+}
+
+.footer-sobre{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.logo-footer{
+    max-width: 4vw;
+}
+/* FIM FOOTER */
