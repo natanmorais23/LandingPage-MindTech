@@ -146,9 +146,50 @@ nav{
     font-size: 1.3vw;
 }
 
-/* Header e banner mobile */
+/* Header e Banner - Responsividade */
 
+@media screen and (max-width: 992px) {
+    a{
+        font-size: 1.75vw;
+    }
 
+    .div_banner{
+        width: auto;
+    }
+
+    .div_banner h1{
+        font-size: 7vw;
+    }
+
+    .div_banner p{
+        width: 37.5vw;
+        font-size: 1.875vw;
+        margin-bottom: 2.5vw;
+    }
+
+    .button{
+        width: 37.5vw;
+    }
+
+    .button-hover{
+        width: 22.5vw;
+        height: 5vw;
+        border-radius: 3.75vw;
+        font-size: 1.75vw;
+    }
+
+    .button-hover:hover{
+        width: 25vw;
+    }
+
+    .scroll h5{
+        font-size: 1.625vw;
+    }
+
+    .scroll i{
+        font-size: 1.625vw;
+    }
+}
 
 
 
@@ -224,6 +265,46 @@ nav{
     font-size: 1.2vw;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+}
+
+/* Service - Responsividade  */
+
+@media screen and (max-width: 992px) {
+    .services{
+        min-height: 120vw;
+        align-items: center;
+    }
+
+    .services_content{
+        justify-content: space-evenly;
+    }
+
+    .service_box{
+        height: auto;
+    }
+
+    .services h1{
+        font-size: 5.6vw;
+        margin-bottom: 3vw;
+    }
+
+    .minibox{
+        border-radius: 3.3vw;
+        width: 35.7vw;
+        height: 30.1vw;
+    }
+
+    .minibox i{
+        font-size: 7vw;
+    }
+
+    .minibox h2{
+        font-size: 3.9vw;
+    }
+
+    .minibox p{
+        font-size: 1.7vw;
+    }
 }
 
 /* COMEÇO GRID DOS CONTATOS */
