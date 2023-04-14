@@ -155,6 +155,9 @@ nav{
 /* Service */
 
 .services{
+    background-image: url("./baixar.png");
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     padding: 4rem;
@@ -162,11 +165,7 @@ nav{
 
 .service_box{
     display: flex;
-    background-color: wheat;
     height: 55vw;
-    box-shadow: 5px 9px 20px -8px rgba(0,0,0,0.5);
-    padding: 2rem;
-    border-radius: 7vw;
     width: 80vw;
     flex-direction: column;
     align-items: center;
@@ -175,24 +174,56 @@ nav{
 
 .services h1{
     text-transform: uppercase;
+    font-size: 4vw;
+    background: linear-gradient(180deg, #D9D9D9 0%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
 }
 
 .services_content{
     display: flex;
     flex-wrap: wrap;
     row-gap: 3vw;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .minibox{
+    background: linear-gradient(0deg, #38517A 0%, #212735 100%);
+    border: 0.3vw solid #5EA1E2;
+    box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.55);
+    border-radius: 2.4vw;
     text-align: center;
     display: flex;
-    width: 20vw;
-    height: 20vw;
-    border: solid;
+    width: 25.5vw;
+    height: 21.5vw;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+
+.minibox i{
+    margin-bottom: 1vw;
+    font-size: 5vw;
+    color: #5EA1E2;
+}
+
+.minibox h2{
+    font-family: 'Geo';
+    font-weight: 500;
+    font-size: 2.8vw;
+    letter-spacing: -0.05em;
+    color: #5EB4E8;
+    text-shadow: 1.15422px 1.53896px 1.9237px rgba(0, 0, 0, 0.25);
+}
+
+.minibox p{
+    width: 85%;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 1.2vw;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
 }
 
 /* COMEÇO GRID DOS CONTATOS */
