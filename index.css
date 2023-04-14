@@ -407,38 +407,51 @@ nav{
 }
 
 @media screen and (max-width: 992px) {
+    .contato{
+        display: flex;
+        justify-content: center;
+    }
+
+    .grid-contato.grid-shadow{
+        width: 80%;
+    }
+
     .grid-template-columns{
         grid-template-columns: 200fr;
-        grid-template-rows: 125fr 200fr;
+        gap: 5vw;
+    }
+
+    .grid-template-rows{
+        margin-top: 3vw;
+        grid-template-rows: 2fr 1fr 1.5fr 1.5fr 2fr 2fr;
     }
 
     .title-contato{
-        font-size: 2em;
+        font-size: 2.5vw;
     }
     .icon-contatos{
-        font-size:2em;
+        font-size:2.8vw;
     }
     .text-contato{
-        font-size: 1.4em;
+        font-size: 2vw;
     }
     .button-contact{
-        max-width: 20em;
+        max-width: 26vw;
     }
     .title-mail-box{
-        font-size: 2em;
+        font-size: 2.5vw;
     }
 
     .text-mail-box{
-        font-size: 1.6em;
+        font-size: 2vw;
     }
     .input-mail-box{
-        padding: 0.6em;
-        font-size: 1.6em;
+        padding: 2vw;
+        font-size: 2vw;
     }
     .mail-contact-subcolumn{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        align-items: normal;
     }
     .input-mail-box-name{
         margin: 0.4em;
@@ -455,25 +468,25 @@ nav{
         
     }
     .rows-mail-contact{        
-        grid-template-rows: 1fr 2fr 3.1fr 1.6fr 3fr 1fr;                
+        grid-template-rows: 1fr 1.7fr 2.6fr 1.5fr 2.8fr 1fr;               
     }
     .mail-box{
         padding: 3em;
     }
     .button-sendmail{
-        width: 9em;
-        height: 4em;
+        width: 12vw;
+        height: 5vw;
         margin: 0.5em auto;
     }
     .button-sendmail-text{
-        font-size: 1.6em;
+        font-size: 2vw;
     }
     .contato{
         padding: 4em;
     }
     .textarea-contato{
         margin: 0.4em;
-        font-size: 1.6em;
+        font-size: 2vw;
         font-family: "Jetbrains Mono";
     }
     .grid-items{
