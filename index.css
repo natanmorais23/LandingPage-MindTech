@@ -360,6 +360,7 @@ nav{
     .services{
         min-height: 120vw;
         align-items: center;
+        width: 100vw;
     }
 
     .services_content{
@@ -621,7 +622,7 @@ nav{
     }
 
     .grid-contato.grid-shadow{
-        width: 80%;
+        width: auto;
     }
 
     .grid-template-columns{
@@ -696,6 +697,93 @@ nav{
         margin: 0.4em;
         font-size: 2vw;
         font-family: "Jetbrains Mono";
+    }
+    .grid-items{
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .contato{
+        display: flex;
+        justify-content: center;
+    }
+
+    .grid-contato.grid-shadow{
+        width: auto;
+    }
+
+    .grid-template-columns{
+        grid-template-columns: 200fr;
+        gap: 8.3vw;
+    }
+
+    .grid-template-rows{
+        margin-top: 5vw;
+        grid-template-rows: 2fr 1fr 1.5fr 1.5fr 2fr 2fr;
+    }
+
+    .title-contato{
+        font-size: 4.2vw;
+    }
+    .icon-contatos{
+        font-size:4.6vw;
+    }
+    .text-contato{
+        font-size: 3.3vw;
+    }
+    .button-contact{
+        max-width: 52vw;
+    }
+    .title-mail-box{
+        font-size: 4.2vw;
+    }
+
+    .text-mail-box{
+        font-size: 3.33vw;
+    }
+    .input-mail-box{
+        padding: 3.33vw;
+        font-size: 3.33vw;
+    }
+    .mail-contact-subcolumn{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .input-mail-box-name{
+        margin: 0.4em;
+        margin-top: 0em;
+
+    }
+    .input-mail-box-phone{        
+        margin: 0.4em;
+        margin-top: 0em;
+    }
+    .input-mail-box-email{
+        margin: 0.4em;
+        margin-top: 0em;
+        
+    }
+    .rows-mail-contact{        
+        grid-template-rows: 1fr 1.7fr 2.6fr 1.5fr 2.8fr 1fr;               
+    }
+    .mail-box{
+        padding: 3em;
+    }
+    .button-sendmail{
+        width: 20vw;
+        height: 8.3vw;
+        margin: 0.5em auto;
+    }
+    .button-sendmail-text{
+        font-size: 3.33vw;
+    }
+    .contato{
+        padding: 4em;
+    }
+    .textarea-contato{
+        margin: 0.4em;
+        font-size: 3.33vw;
     }
     .grid-items{
         padding: 1em;
