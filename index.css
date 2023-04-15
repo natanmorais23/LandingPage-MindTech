@@ -791,14 +791,17 @@ nav{
     align-items: center;
     justify-content: center;
     align-content: center;
-    padding: 8em 0;
+    padding: 5em 0;
+    background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0));
 }
 
 .feedbackPeoples h1{
     cursor: default;
-    font-size: 5em;
-    margin-bottom: 2em;
+    font-family: 'Open Sans';
+    font-size: 2.3em;
+    margin-bottom: 3em;
     text-align: center;
+    color: #38517A;
 }
 
 .containerCardsFeedback{
@@ -806,24 +809,26 @@ nav{
     min-height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
     flex-wrap: wrap;
-    gap: 8em;
+    column-gap: 1.4em;
+    row-gap: 6em;
 }
 
 .cardFeedback{
-    width: 30em;
-    min-height: 20em;
+    width: 20em;
     height: auto;
     box-shadow: 0 0 5px 1px grey;
     border-radius: .5em;
     margin: 0;
+    background: linear-gradient(0deg, #5EB4E8, #5c6f9a);
+    border: 1px solid #212735;
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 1.5em;
-    padding: 1em;
+    font-size: 1em;
+    padding: 1.2em;
     cursor: default;
 }
 
@@ -832,10 +837,13 @@ nav{
 }
 
 .iconProfileImage{
-    width: 8em;
-    height: 8em;
+    background-image: url("./moises.jpg");
+    background-size: 100%;
+    width: 6em;
+    height: 6em;
     background-color: grey;
     border-radius: 50%;
+    box-shadow: 0 0 5px 1px grey;
     position: absolute;
     display: flex;
     align-self: center;
@@ -848,16 +856,43 @@ nav{
     font-style: italic;
     width: 100%;
     height: 80%;
+    font-weight: 500;
+    color: #1a2235;
 }
 
 .nameProfile{
-    margin-top: .5em;
+    margin-top: 1em;
+    font-weight: bold;
 }
 
 .nameJob{
-    color: grey;
+    color: black;
+    font-weight: 200;
 }
 /* --- ---*/
+
+@media screen and (max-width: 992px) {
+    .feedbackPeoples h1{
+        font-size: 2.75em;
+        margin-bottom: 2.3em;
+        width: 80%;
+    }
+    
+    .cardFeedback{
+        font-size: 1.15em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .feedbackPeoples h1{
+        font-size: 2.1em;
+        margin-bottom: 2.8em;
+    }
+    
+    .cardFeedback{
+        font-size: 1.02em;
+    }
+}
 
 /* COMEÇO FOOTER */
 .footer-content{
