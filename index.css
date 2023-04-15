@@ -739,6 +739,7 @@ nav{
     }
     .input-mail-box{
         padding: 3.33vw;
+        box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.44);
         font-size: 3.33vw;
     }
     .mail-contact-subcolumn{
