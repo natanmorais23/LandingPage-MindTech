@@ -410,7 +410,7 @@ nav{
     }
 
     .services h1{
-        font-size: 8.2vw;
+        font-size: 7.8vw;
         margin-bottom: 6vw;
     }
 
@@ -704,11 +704,6 @@ nav{
 }
 
 @media screen and (max-width: 640px) {
-    .contato{
-        display: flex;
-        justify-content: center;
-    }
-
     .grid-contato.grid-shadow{
         width: auto;
     }
@@ -751,24 +746,14 @@ nav{
         grid-template-rows: 1fr 1fr;
     }
     .input-mail-box-name{
-        margin: 0.4em;
-        margin-top: 0em;
+        margin-top: 1em;
 
-    }
-    .input-mail-box-phone{        
-        margin: 0.4em;
-        margin-top: 0em;
-    }
-    .input-mail-box-email{
-        margin: 0.4em;
-        margin-top: 0em;
-        
     }
     .rows-mail-contact{        
         grid-template-rows: 1fr 1.7fr 2.6fr 1.5fr 2.8fr 1fr;               
     }
     .mail-box{
-        padding: 3em;
+        padding: 1.7em;
     }
     .button-sendmail{
         width: 20vw;
