@@ -32,6 +32,10 @@ header{
     align-items: center;
 }
 
+.fa-solid.fa-bars{
+    display: none;
+}
+
 .logo{
     width: 6vw;
 }
@@ -149,12 +153,21 @@ nav{
 /* Header e Banner - Responsividade */
 
 @media screen and (max-width: 992px) {
+    header{
+        height: 12vh;
+    }
+
     a{
         font-size: 1.75vw;
     }
 
+    .banner{
+        height: 88vh;
+    }
+
     .div_banner{
         width: auto;
+        margin-bottom: 6vh;
     }
 
     .div_banner h1{
@@ -171,7 +184,7 @@ nav{
         width: 37.5vw;
     }
 
-    .button-hover{
+    .div_banner .button-hover{
         width: 22.5vw;
         height: 5vw;
         border-radius: 3.75vw;
@@ -183,15 +196,89 @@ nav{
     }
 
     .scroll h5{
-        font-size: 1.625vw;
+        font-size: 1.85vw;
     }
 
     .scroll i{
-        font-size: 1.625vw;
+        font-size: 1.85vw;
     }
 }
 
+@media screen and (max-width: 640px) {
+    header{
+        height: 20vh;
+        width: 90vw;
+        justify-content: space-around;
+    }
 
+    header i{
+        font-size: 7vw;
+    }
+
+    .fa-solid.fa-bars{
+        display: flex;
+    }
+
+    .logo{
+        width: 15vw;
+    }
+
+    nav{
+        display: none;
+    }
+
+    body{
+        background-image: url("./background_mobile.png");
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner{
+        height: 80vh;
+    }
+
+    .div_banner{
+        margin-bottom: 10vh;
+    }
+
+    .div_banner h1{
+        font-size: 13.8vw;
+    }
+
+    .div_banner p{
+        width: 75vw;
+        font-size: 3.75vw;
+        margin-bottom: 5vw;
+    }
+
+    .button{
+        width: 75vw;
+    }
+
+    .div_banner .button-hover{
+        width: 45vw;
+        height: 10vw;
+        border-radius: 7.5vw;
+        font-size: 3.5vw;
+    }
+
+    .button-hover:hover{
+        width: 50vw;
+    }
+
+    .scroll{
+        left: 44.1%;
+    }
+
+    .scroll h5{
+        font-size: 3.25vw;
+    }
+
+    .scroll i{
+        font-size: 3.25vw;
+    }
+}
 
 /* Service */
 
@@ -304,6 +391,44 @@ nav{
 
     .minibox p{
         font-size: 1.7vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .services{
+        min-height: 120vw;
+        align-items: center;
+    }
+
+    .services_content{
+        justify-content: space-evenly;
+    }
+
+    .service_box{
+        height: auto;
+    }
+
+    .services h1{
+        font-size: 8.2vw;
+        margin-bottom: 6vw;
+    }
+
+    .minibox{
+        border-radius: 6.6vw;
+        width: 70.4vw;
+        height: 60.2vw;
+    }
+
+    .minibox i{
+        font-size: 14vw;
+    }
+
+    .minibox h2{
+        font-size: 7.8vw;
+    }
+
+    .minibox p{
+        font-size: 3.4vw;
     }
 }
 
