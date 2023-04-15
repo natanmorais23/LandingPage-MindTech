@@ -612,6 +612,8 @@ nav{
     font-size: 1vw;
 }
 
+/* Grid Contato - Responsividade */
+
 @media screen and (max-width: 992px) {
     .contato{
         display: flex;
@@ -699,6 +701,7 @@ nav{
         padding: 1em;
     }
 }
+
 
 /* FIM DA GRID DOS CONTATOS */
 
@@ -816,6 +819,32 @@ nav{
 }
 
 .logo-footer{
-    max-width: 4vw;
+    width: 4vw;
 }
+
+@media screen and (max-width: 992px) {
+    .logo-footer{
+        width: 5.6vw;
+    }
+
+    .footer-rights-text{
+        font-size: 1.4vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .logo-footer{
+        width: 10.2vw;
+    }
+
+    .footer-rights-text{
+        font-size: 2.8vw;
+    }
+
+    .footer-rows{
+        width: 100vw;
+    }
+}
+
+
 /* FIM FOOTER */
