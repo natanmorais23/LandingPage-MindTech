@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geo&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6576493062.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -144,19 +145,22 @@
                 </div>
                 <div class="grid-items">
                     <div class="mail-box">
-                        <div class="rows-mail-contact">
-                            <p class="title-mail-box">Envie-nos um email</p>
-                            <p class="text-mail-box">Mande um email para nós. Iremos retornar o contato para montar um orçamento!</p>
-                            <div class="mail-contact-subcolumn">
-                                <input type="text" placeholder="Nome" class="input-mail-box input-mail-box-name">
-                                <input type="text" placeholder="Telefone" class="input-mail-box input-mail-box-phone" >
+                        <form action="" method="post" id="form-contact">
+                            <div class="rows-mail-contact">                                
+                                <p class="title-mail-box">Envie-nos um email</p>
+                                <p class="text-mail-box">Mande um email para nós. Iremos retornar o contato para montar um orçamento!</p>
+                                <div class="mail-contact-subcolumn">
+                                    <input type="text" placeholder="Nome" class="input-mail-box input-mail-box-name" name="name">
+                                    <input type="text" placeholder="Telefone" class="input-mail-box input-mail-box-phone" name="telephone">
+                                </div>
+                                <input type="email" placeholder="Email" class="input-mail-box input-mail-box-email" name="email">
+                                
+                                <textarea type="email" placeholder="Escreva sua mensagem" class="input-mail-box textarea-contato" name="message"></textarea>
+                                <button class="button-sendmail" type="submit">
+                                    <p class="button-sendmail-text">Enviar</p>
+                                </button>
                             </div>
-                            <input type="email" placeholder="Email" class="input-mail-box input-mail-box-email">
-                            <textarea type="email" placeholder="Escreva sua mensagem" class="input-mail-box textarea-contato"                                                     ></textarea>
-                            <button class="button-sendmail">
-                                <p class="button-sendmail-text">Enviar</p>
-                            </button>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>            
@@ -178,5 +182,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./index.js"></script>
 </body>
 </html>
