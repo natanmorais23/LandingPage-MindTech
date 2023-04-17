@@ -783,11 +783,12 @@ nav{
 @media screen and (max-width: 640px) {
     .grid-contato.grid-shadow{
         width: auto;
+        box-shadow: none;
     }
 
     .grid-template-columns{
         grid-template-columns: 200fr;
-        gap: 8.3vw;
+        gap: 5vw;
     }
 
     .grid-template-rows{
@@ -832,6 +833,7 @@ nav{
     }
     .mail-box{
         padding: 1.7em;
+        
     }
     .button-sendmail{
         width: 20vw;
@@ -842,7 +844,7 @@ nav{
         font-size: 3.33vw;
     }
     .contato{
-        padding: 4em;
+        padding: 1em;
     }
     .textarea-contato{
         margin: 0.4em;
