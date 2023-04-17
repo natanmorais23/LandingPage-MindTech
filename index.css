@@ -779,11 +779,167 @@ nav{
 
 /* FIM DA GRID DOS CONTATOS */
 
+
+/* About us */
+
+.about_us{
+    padding: 3vw;
+    display: flex;
+    background: linear-gradient(90deg, #5EA1E2, #5c6f9a);
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_us h1{
+    margin-bottom: 1vw;
+    text-transform: uppercase;
+    font-size: 4vw;
+    background: linear-gradient(180deg, #eee 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.about_us_text p{
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    font-family: 'JetBrains Mono';
+    font-size: 1.45vw;
+    color: #FFFFFF;
+    margin-bottom: 6vw;
+}
+
+.cards{
+    display: flex;
+    gap: 8vw;
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img{
+    z-index: 1;
+    border-radius: 50%;
+    width: 10vw;
+}
+
+.especial{
+    border: solid white;
+    box-shadow: 0 0 5px 1px white;
+    background: linear-gradient(180deg, rgba(255,255,255,.7), rgba(255,255,255,0.9));
+    border-radius: 1vw;
+    padding: 1vw;
+    margin-top: -1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20.8vw;
+}
+
+.especial h2{
+    font-size: 1.8vw;
+    margin-bottom: 0.8vw;
+    text-transform: uppercase;
+}
+
+.card p{
+    font-size: 1.37vw;
+}
+
+.card h6{
+    font-size: 1.3vw;
+}
+
+/* About us - Responsividade */
+
+@media screen and (max-width: 992px) {
+    .about_us h1{
+        font-size: 5.6vw;
+        margin-bottom: 1.4vw;
+    }
+
+    .about_us_text p{
+        font-size: 2vw;
+        margin-bottom: 8.4vw;
+    }
+
+    .card img{
+        width: 14vw;
+    }
+
+    .especial{
+        border-radius: 1.4vw;
+        padding: 1.4vw;
+        margin-top: -1.4vw;
+        width: 29.1vw;
+    }
+
+    .especial h2{
+        font-size: 2.5vw;
+        margin-bottom: 1.1vw;
+    }
+
+    .card p{
+        font-size: 1.9vw;
+    }
+
+    .card h6{
+        font-size: 1.82vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .about_us{
+        padding: 10vw;
+    }
+
+    .about_us h1{
+        font-size: 7.8vw;
+        margin-bottom: 2.8vw;
+    }
+
+    .about_us_text p{
+        font-size: 4vw;
+        width: 80%;
+        margin-bottom: 16.8vw;
+    }
+
+    .card img{
+        width: 28vw;
+    }
+
+    .especial{
+        border-radius: 2.8vw;
+        padding: 2.8vw;
+        margin-top: -2.8vw;
+        width: 58.2vw;
+    }
+
+    .especial h2{
+        font-size: 5vw;
+        margin-bottom: 2.2vw;
+    }
+
+    .card p{
+        font-size: 3.8vw;
+    }
+
+    .card h6{
+        font-size: 3.64vw;
+    }
+}
+
 /* section feedbackPeoples */
 
 .feedbackPeoples{
     width: 100vw;
-    min-height: 100vh;
     height: auto;
     background-color: white;
     display: flex;
@@ -791,15 +947,15 @@ nav{
     align-items: center;
     justify-content: center;
     align-content: center;
-    padding: 5em 0;
+    padding: 7vw 0;
     background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0));
 }
 
 .feedbackPeoples h1{
     cursor: default;
     font-family: 'Open Sans';
-    font-size: 2.3em;
-    margin-bottom: 3em;
+    font-size: 3.8vw;
+    margin-bottom: 9vw;
     text-align: center;
     color: #38517A;
 }
@@ -812,23 +968,23 @@ nav{
     justify-content: space-evenly;
     align-content: center;
     flex-wrap: wrap;
-    column-gap: 1.4em;
-    row-gap: 6em;
+    column-gap: 2vw;
+    row-gap: 10vw;
 }
 
 .cardFeedback{
-    width: 20em;
+    width: 35vw;
     height: auto;
     box-shadow: 0 0 5px 1px grey;
-    border-radius: .5em;
+    border-radius: 1vw;
     margin: 0;
     background: linear-gradient(0deg, #5EB4E8, #5c6f9a);
     border: 1px solid #212735;
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 1em;
-    padding: 1.2em;
+    font-size: 1.6vw;
+    padding: 2vw;
     cursor: default;
 }
 
@@ -839,8 +995,8 @@ nav{
 .iconProfileImage{
     background-image: url("./moises.jpg");
     background-size: 100%;
-    width: 6em;
-    height: 6em;
+    width: 12vw;
+    height: 12vw;
     background-color: grey;
     border-radius: 50%;
     box-shadow: 0 0 5px 1px grey;
@@ -851,7 +1007,7 @@ nav{
 }
 
 .cardFeedback q{
-    margin-top: 4.2em;
+    margin-top: 6vw;
     text-align: justify;
     font-style: italic;
     width: 100%;
@@ -861,7 +1017,7 @@ nav{
 }
 
 .nameProfile{
-    margin-top: 1em;
+    margin-top: 2vw;
     font-weight: bold;
 }
 
@@ -873,24 +1029,31 @@ nav{
 
 @media screen and (max-width: 992px) {
     .feedbackPeoples h1{
-        font-size: 2.75em;
-        margin-bottom: 2.3em;
+        font-size: 5.3vw;
+        margin-bottom: 12.6vw;
         width: 80%;
     }
     
     .cardFeedback{
-        font-size: 1.15em;
+        font-size: 2.24vw;
     }
 }
 
 @media screen and (max-width: 640px) {
     .feedbackPeoples h1{
-        font-size: 2.1em;
-        margin-bottom: 2.8em;
+        font-size: 7.8vw;
+        margin-bottom: 16vw;
     }
     
     .cardFeedback{
-        font-size: 1.02em;
+        font-size: 3.8vw;
+        width: 65%;
+        margin-bottom: 8vw;
+    }
+
+    .iconProfileImage{
+        width: 21vw;
+        height: 21vw;
     }
 }
 
