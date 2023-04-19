@@ -510,6 +510,64 @@ nav{
         font-size: 3.4vw;
     }
 }
+/* SEÇÃO SOBRESERVICE */
+
+.sobreService{
+    width: 100vw;
+    padding: 2vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, #35415d, #fff);
+}
+
+.sobreService img{
+    width: 45vw;
+    height: 45vw;
+}
+
+.sobreServiceInfos{
+    width: 45vw;
+    height: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+}
+
+.sobreServiceInfos h1{
+    font-size: 3.5vw;
+
+}
+
+.sobreServiceInfos p{
+    font-size: 1.5vw;
+    
+}
+
+.sobreServiceInfos span{
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.sobreServiceInfos ul{
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 640px) {
+    .sobreService{
+        flex-direction: column;
+    }
+
+    .sobreService img{
+        width: 80vw;
+    }
+    
+    .sobreServiceInfos{
+        width: 80vw;
+        
+    }
+}
 
 /* COMEÇO GRID DOS CONTATOS */
 
