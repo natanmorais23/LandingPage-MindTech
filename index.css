@@ -3,7 +3,7 @@ html{
 }
 
 :root{
-    --text-color: #35415d;
+    --text-color: #243455;
 }
 
 *{
@@ -17,7 +17,7 @@ body{
     font-size: 100%;
     font-family: "Jetbrains Mono";
     background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0)), url(./background.png);
-    background-size: 100% 100vh;
+    background-size: 100% 115vh;
     background-position: top;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -361,19 +361,19 @@ nav{
 /* Service */
 
 .services{
-    background-color: #f4f4f4;
+    background-color: #3f5b94;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     padding: 4rem;
+    margin-top: 15vh;
 }
 
 .service_box{
     box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.55);
     border-radius: 1vw;
-    background-color: #f8f8f8;
-    opacity: 0.9;
+    background-color: #f4f4f4;
     display: flex;
     height: 55vw;
     width: 80vw;
@@ -423,6 +423,7 @@ nav{
 .minibox p{
     width: 85%;
     font-family: 'Open Sans';
+    text-align: justify;
     font-weight: 400;
     font-size: 1.2vw;
     letter-spacing: -0.02em;
@@ -524,42 +525,96 @@ nav{
     padding: 2vw 0;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: linear-gradient(0deg, #35415d, #fff);
+    justify-content: space-evenly;
+    background-color: #f4f4f4;
 }
 
 .sobreService img{
     width: 45vw;
     height: 45vw;
+    border-radius: 7vw;
 }
 
 .sobreServiceInfos{
     width: 45vw;
+    position: relative;
     height: 45vw;
+    gap: 1.3vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding: 1vw;
+    justify-content: center;
 }
 
 .sobreServiceInfos h1{
-    font-size: 3.5vw;
-
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'JetBrains Mono';
+    text-align: justify;
 }
 
 .sobreServiceInfos p{
     font-size: 1.5vw;
-    
+    text-align: justify;
+    font-family: 'Open Sans';
 }
 
 .sobreServiceInfos span{
-    font-size: 1.5vw;
+    font-size: 1.75vw;
     font-weight: bold;
 }
 
-.sobreServiceInfos ul{
-    font-size: 1.5vw;
+.vantagens{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7vw;
 }
+
+.vantagem{
+    width: 125%;
+    height: 35%;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    border-radius: 1vw;
+}
+
+.pod{
+    width: 10%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 1vw;
+    background-color: #3f5b94;
+    position: absolute;
+}
+
+.pod p{
+    visibility: hidden;
+}
+
+.vantagem_left{
+    margin-left: -100%;
+    font-size: 1.1vw;
+    font-family: 'Open Sans';
+    color: white;
+}
+
+.vantagem:hover{
+    transition: 2s;
+}
+
+.vantagem:hover .vantagem_left{
+    margin-left: 3%;
+    transition: 3s;
+}
+
+.vantagem:hover .pod{
+    width: 120%;
+    transition: 3s;
+}
+
 
 @media screen and (max-width: 640px) {
     .sobreService{
@@ -580,7 +635,7 @@ nav{
 
 .contato{
     width: 100%;
-    background-color: #35415d;
+    background-color: #3f5b94;
     align-content: center;
     align-items: center;
     padding: 5vw;
@@ -715,7 +770,7 @@ nav{
 
 .button-sendmail{
     text-decoration: white;
-    background-color: #35415d;
+    background-color: #3f5b94;
     width: 10vw;
     height: 2.3vw;
     border-radius: 1vw;
@@ -930,9 +985,20 @@ nav{
 .about_us{
     padding: 3vw;
     display: flex;
-    background: linear-gradient(90deg, #5EA1E2, #5c6f9a);
+    background-color: #f4f4f4;
     flex-direction: column;
     align-items: center;
+}
+
+.new{
+    padding: 1vw;
+    background-color: #3f5b94;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .about_us h1{
@@ -941,18 +1007,17 @@ nav{
     font-size: 4vw;
     background: linear-gradient(180deg, #eee 0%, #fff 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
+    color: #f4f4f4;
 }
 
 .about_us_text p{
     margin: auto;
-    text-align: center;
+    text-align: justify;
     width: 70%;
-    font-family: 'JetBrains Mono';
+    font-family: 'Open Sans';
     font-size: 1.45vw;
-    color: #FFFFFF;
-    margin-bottom: 6vw;
+    color: #f4f4f4;
+    margin-bottom: 2vw;
 }
 
 .cards{
@@ -961,32 +1026,47 @@ nav{
     width: 85%;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 3vw;
+}
+
+.cards hr{
+    width: 90%;
 }
 
 .card{
+    padding: 1vw;
+    border-radius: 1.5vw;
+    background-color: #3f5b94;
+    color: #f4f4f4;
     display: flex;
+    box-shadow: 9px 9px 2px -2px #5f8eef;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    gap: 1vw;
+    width: 34vw;
+}
+
+.card_top{
+    display: flex;
+    width: 91%;
+    gap: 2vw;
+    justify-content: space-between;
 }
 
 .card img{
     z-index: 1;
-    border-radius: 50%;
+    border-radius: 15%;
     width: 10vw;
     height: 10vw;
 }
 
 .especial{
-    border: solid white;
-    box-shadow: 0 0 5px 1px white;
-    background: linear-gradient(180deg, rgba(255,255,255,.7), rgba(255,255,255,0.9));
-    border-radius: 1vw;
     padding: 1vw;
-    margin-top: -1vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 20.8vw;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .especial h2{
@@ -997,10 +1077,20 @@ nav{
 
 .card p{
     font-size: 1.37vw;
+    font-family: 'Open Sans';
 }
 
 .card h6{
     font-size: 1.25vw;
+}
+
+.card_bottom{
+    width: 90%;
+    text-align: justify;
+}
+
+.card_bottom p{
+    font-weight: 500;
 }
 
 /* About us - Responsividade */
