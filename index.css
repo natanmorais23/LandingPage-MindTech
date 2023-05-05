@@ -1179,14 +1179,14 @@ nav{
 .feedbackPeoples{
     width: 100vw;
     height: auto;
-    background-color: white;
+    background-color: #3f5b94;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     align-content: center;
     padding: 7vw 0;
-    background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0));
+    /*background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0));*/
 }
 
 .feedbackPeoples h1{
@@ -1195,7 +1195,7 @@ nav{
     font-size: 3.8vw;
     margin-bottom: 9vw;
     text-align: center;
-    color: #38517A;
+    color: #243455;
 }
 
 .containerCardsFeedback{
@@ -1203,15 +1203,15 @@ nav{
     min-height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    /*justify-content: space-evenly;*/
     align-content: center;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     column-gap: 2vw;
     row-gap: 10vw;
 }
 
 .cardFeedback{
-    width: 35vw;
+    width: 30vw;
     height: auto;
     box-shadow: 0 0 5px 1px grey;
     border-radius: 1vw;
@@ -1220,8 +1220,8 @@ nav{
     border: 1px solid #212735;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    font-size: 1.6vw;
+    /*text-align: center;*/
+    font-size: 1vw;
     padding: 2vw;
     cursor: default;
 }
@@ -1233,20 +1233,32 @@ nav{
 .iconProfileImage{
     background-image: url("./user.png");
     background-size: 100%;
-    width: 12vw;
-    height: 12vw;
+    width: 10vw;
+    height: 10vw;
     background-color: grey;
     border-radius: 50%;
     box-shadow: 0 0 5px 1px grey;
     position: absolute;
     display: flex;
-    align-self: center;
+    /*align-self: center;*/
     transform: translateY(calc(-50% - 1em))
 }
-
+.aspas{
+    background-image: url("./aspas.png");
+    background-size: 100%;
+    width: 3vw;
+    height: 3vw;
+    align-self: center;
+    margin-left: auto;
+    transform: translateY(calc(-50% - 2em))
+}
+.cardFeedbackBar{
+    display: flex;
+   
+}
 .cardFeedback q{
-    margin-top: 6vw;
-    text-align: justify;
+    margin-top: 3vw;
+    text-align: left;
     font-style: italic;
     width: 100%;
     height: 80%;
