@@ -1281,6 +1281,16 @@ nav{
         margin-bottom: 3vw;
     }
 
+    .new{
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .sobreService{
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
     .card img{
         width: 28vw;
         height: 28vw;
