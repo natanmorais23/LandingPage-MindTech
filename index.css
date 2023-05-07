@@ -213,7 +213,7 @@ nav{
     header{
         height: 20vh;
         width: 90vw;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     header i{
@@ -491,7 +491,7 @@ nav{
 
     .services h1{
         font-size: 7vw;
-        width: 90%;
+        width: 80%;
         margin-bottom: 10vw;
         margin-top: 10vw;
     }
@@ -538,7 +538,6 @@ nav{
 .sobreServiceInfos{
     width: 45vw;
     position: relative;
-    height: 45vw;
     gap: 1.3vw;
     display: flex;
     flex-direction: column;
@@ -616,20 +615,56 @@ nav{
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 992px) {
     .sobreService{
         flex-direction: column;
     }
 
     .sobreService img{
-        width: 80vw;
+        display: none;
     }
     
     .sobreServiceInfos{
         width: 80vw;
         
     }
+
+    .sobreServiceInfos h1{
+        font-size: 4.2vw;
+        text-align: left;
+    }
+
+    .sobreServiceInfos p{
+        font-size: 2vw;
+    }
+
+    .sobreServiceInfos span{
+        font-size: 2.3vw;
+    }
+
+    .vantagem_left{
+        font-size: 1.54vw;
+    }
 }
+
+@media screen and (max-width: 640px) {
+    .sobreServiceInfos h1{
+        font-size: 7vw;
+    }
+
+    .sobreServiceInfos p{
+        font-size: 4vw;
+    }
+
+    .sobreServiceInfos span{
+        font-size: 4.6vw;
+    }
+
+    .vantagem_left{
+        font-size: 3.08vw;
+    }
+}
+
 
 /* COMEÇO GRID DOS CONTATOS */
 
@@ -1103,7 +1138,10 @@ nav{
 
     .about_us_text p{
         font-size: 2vw;
-        margin-bottom: 8.4vw;
+    }
+
+    .card{
+        width: 35vw;
     }
 
     .card img{
@@ -1134,7 +1172,7 @@ nav{
 
 @media screen and (max-width: 640px) {
     .about_us{
-        padding: 10vw;
+        padding: 0;
     }
 
     .about_us h1{
@@ -1145,12 +1183,20 @@ nav{
     .about_us_text p{
         font-size: 4vw;
         width: 80%;
-        margin-bottom: 16.8vw;
+    }
+
+    .card{
+        width: 70vw;
+        padding: 3vw;
     }
 
     .card img{
         width: 28vw;
         height: 28vw;
+    }
+
+    .cards{
+        margin-bottom: 10vw;
     }
 
     .especial{
@@ -1282,13 +1328,31 @@ nav{
 
 @media screen and (max-width: 992px) {
     .feedbackPeoples h1{
-        font-size: 5.3vw;
+        font-size: 4.2vw;
         margin-bottom: 12.6vw;
         width: 80%;
     }
     
     .cardFeedback{
         font-size: 2.24vw;
+    }
+
+    .aspas{
+        width: 4vw;
+        height: 4vw;
+        transform: translateY(calc(-50% - 1em))
+    }
+
+    .cardFeedback q{
+        font-size: 1.9vw;
+    }
+
+    .nameProfile{
+        font-size: 2.1vw;
+    }
+
+    .nameJob{
+        font-size: 1.75vw;
     }
 }
 
@@ -1300,13 +1364,33 @@ nav{
     
     .cardFeedback{
         font-size: 3.8vw;
-        width: 65%;
+        width: 100%;
+        padding: 4vw;
         margin-bottom: 8vw;
+    }
+
+    .aspas{
+        width: 8vw;
+        height: 8vw;
+        transform: translateY(calc(-50% - 1em))
     }
 
     .iconProfileImage{
         width: 21vw;
         height: 21vw;
+        transform: translateY(calc(-50% - 1.5em))
+    }
+
+    .cardFeedback q{
+        font-size: 3.8vw;
+    }
+
+    .nameProfile{
+        font-size: 4.2vw;
+    }
+
+    .nameJob{
+        font-size: 3.5vw;
     }
 }
 
