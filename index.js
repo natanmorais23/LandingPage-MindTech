@@ -36,3 +36,43 @@ btnContact.addEventListener('click', exitMenuMobile);
 
 btnNavBar.addEventListener('click', enterMenuMobile);
 btnCloseNavBar.addEventListener('click', exitMenuMobile);
+
+
+const controls = document.querySelectorAll('.control');
+
+let current_item = 0;
+const items = document.querySelectorAll('.card');
+const maxItems = items.length;
+
+controls.forEach(control =>{
+    control.addEventListener('click', (e)=>{
+        isLeft = e.target.classList.contains("arrow-left");
+        
+        if(isLeft){
+            
+            current_item-=1;
+                   
+        }else{            
+            current_item+=1;            
+        
+        }
+
+        if(current_item>=maxItems){
+            current_item=0;
+
+        }
+
+        if(current_item<0){
+            current_item=maxItems-1;
+        }
+
+        items.forEach((item) => item.classList.remove("current-item"));
+
+        items[current_item].scrollIntoView({            
+            behavior: "smooth",            
+            block: "nearest"
+        });
+      
+        items[current_item].classList.add("current-item");
+    })
+})
