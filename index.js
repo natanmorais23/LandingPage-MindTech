@@ -43,11 +43,25 @@ const controls = document.querySelectorAll('.control');
 let current_item = 0;
 const items = document.querySelectorAll('.card');
 const maxItems = items.length;
+const carouselContainer = document.querySelector('.container');
 
 var interval = setInterval(function(){
     current_item++;
     changeCarouselItem();
+    
 }, 3000);
+
+const checkIfIsInView = setInterval(function(){
+    if(isInViewport(carouselContainer)){
+        if(interval==false){
+            startTheInterval();
+        }
+        
+    }else{
+        clearInterval(interval);
+        interval=false;
+    }
+}, 400);
 
 controls.forEach(control =>{
     control.addEventListener('click', (e)=>{
@@ -85,11 +99,26 @@ changeCarouselItem=()=>{
 
     items.forEach((item) => item.classList.remove("current-item"));
 
+    
     items[current_item].scrollIntoView({            
         behavior: "smooth",            
         block: "nearest"
+            
     });
-  
+        
     items[current_item].classList.add("current-item");
     startTheInterval();
+}
+
+
+
+function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+
+    );
 }
