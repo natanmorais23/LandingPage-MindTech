@@ -213,7 +213,7 @@ nav{
     header{
         height: 20vh;
         width: 90vw;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     header i{
@@ -491,7 +491,7 @@ nav{
 
     .services h1{
         font-size: 7vw;
-        width: 90%;
+        width: 80%;
         margin-bottom: 10vw;
         margin-top: 10vw;
     }
@@ -538,7 +538,6 @@ nav{
 .sobreServiceInfos{
     width: 45vw;
     position: relative;
-    height: 45vw;
     gap: 1.3vw;
     display: flex;
     flex-direction: column;
@@ -607,7 +606,7 @@ nav{
 
 .vantagem:hover .vantagem_left{
     margin-left: 3%;
-    transition: 3s;
+    transition: 2s;
 }
 
 .vantagem:hover .pod{
@@ -616,20 +615,56 @@ nav{
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 992px) {
     .sobreService{
         flex-direction: column;
     }
 
     .sobreService img{
-        width: 80vw;
+        display: none;
     }
     
     .sobreServiceInfos{
         width: 80vw;
         
     }
+
+    .sobreServiceInfos h1{
+        font-size: 4.2vw;
+        text-align: left;
+    }
+
+    .sobreServiceInfos p{
+        font-size: 2vw;
+    }
+
+    .sobreServiceInfos span{
+        font-size: 2.3vw;
+    }
+
+    .vantagem_left{
+        font-size: 1.54vw;
+    }
 }
+
+@media screen and (max-width: 640px) {
+    .sobreServiceInfos h1{
+        font-size: 7vw;
+    }
+
+    .sobreServiceInfos p{
+        font-size: 4vw;
+    }
+
+    .sobreServiceInfos span{
+        font-size: 4.6vw;
+    }
+
+    .vantagem_left{
+        font-size: 3.08vw;
+    }
+}
+
 
 /* COMEÇO GRID DOS CONTATOS */
 
@@ -645,7 +680,7 @@ nav{
     box-shadow: 10px 10px black;
 }
 .grid-contato {
-    background-color: aliceblue;
+    background-color: #f4f4f4;
     display: grid;   
     padding: 1%;
     align-content: center;
@@ -664,7 +699,7 @@ nav{
 
 .grid-items{
     margin: 5px;
-	background: aliceblue;	
+	background: #f4f4f4;	
 }
 
 .title-contato{
@@ -1189,7 +1224,10 @@ nav{
 
     .about_us_text p{
         font-size: 2vw;
-        margin-bottom: 8.4vw;
+    }
+
+    .card{
+        width: 35vw;
     }
 
     .card img{
@@ -1220,7 +1258,7 @@ nav{
 
 @media screen and (max-width: 640px) {
     .about_us{
-        padding: 10vw;
+        padding: 0;
     }
 
     .about_us h1{
@@ -1231,12 +1269,20 @@ nav{
     .about_us_text p{
         font-size: 4vw;
         width: 80%;
-        margin-bottom: 16.8vw;
+    }
+
+    .card{
+        width: 70vw;
+        padding: 3vw;
     }
 
     .card img{
         width: 28vw;
         height: 28vw;
+    }
+
+    .cards{
+        margin-bottom: 10vw;
     }
 
     .especial{
@@ -1281,29 +1327,29 @@ nav{
     font-size: 3.8vw;
     margin-bottom: 9vw;
     text-align: center;
-    color: #243455;
+    color: #f4f4f4;
 }
 
 .containerCardsFeedback{
-    width: 90vw;
+    width: 80vw;
+    flex: wra;
     min-height: 100%;
     display: flex;
     flex-direction: row;
-    /*justify-content: space-evenly;*/
+    justify-content: space-around;
     align-content: center;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     column-gap: 2vw;
     row-gap: 10vw;
 }
 
 .cardFeedback{
-    width: 30vw;
+    width: 37vw;
     height: auto;
-    box-shadow: 0 0 5px 1px grey;
     border-radius: 1vw;
     margin: 0;
-    background: linear-gradient(0deg, #5EB4E8, #5c6f9a);
-    border: 1px solid #212735;
+    background-color: #f4f4f4;
+    box-shadow: 9px 9px 2px -2px #5f8eef;
     display: flex;
     flex-direction: column;
     /*text-align: center;*/
@@ -1344,34 +1390,55 @@ nav{
 }
 .cardFeedback q{
     margin-top: 3vw;
+    font-size: 1.37vw;
     text-align: left;
-    font-style: italic;
+    font-family: 'Open Sans';
     width: 100%;
     height: 80%;
-    font-weight: 500;
+    font-weight: 600;
     color: #1a2235;
 }
 
 .nameProfile{
     margin-top: 2vw;
     font-weight: bold;
+    font-size: 1.5vw;
 }
 
 .nameJob{
     color: black;
     font-weight: 200;
+    font-size: 1.25vw;
 }
 /* --- ---*/
 
 @media screen and (max-width: 992px) {
     .feedbackPeoples h1{
-        font-size: 5.3vw;
+        font-size: 4.2vw;
         margin-bottom: 12.6vw;
         width: 80%;
     }
     
     .cardFeedback{
         font-size: 2.24vw;
+    }
+
+    .aspas{
+        width: 4vw;
+        height: 4vw;
+        transform: translateY(calc(-50% - 1em))
+    }
+
+    .cardFeedback q{
+        font-size: 1.9vw;
+    }
+
+    .nameProfile{
+        font-size: 2.1vw;
+    }
+
+    .nameJob{
+        font-size: 1.75vw;
     }
 }
 
@@ -1383,20 +1450,40 @@ nav{
     
     .cardFeedback{
         font-size: 3.8vw;
-        width: 65%;
+        width: 100%;
+        padding: 4vw;
         margin-bottom: 8vw;
+    }
+
+    .aspas{
+        width: 8vw;
+        height: 8vw;
+        transform: translateY(calc(-50% - 1em))
     }
 
     .iconProfileImage{
         width: 21vw;
         height: 21vw;
+        transform: translateY(calc(-50% - 1.5em))
+    }
+
+    .cardFeedback q{
+        font-size: 3.8vw;
+    }
+
+    .nameProfile{
+        font-size: 4.2vw;
+    }
+
+    .nameJob{
+        font-size: 3.5vw;
     }
 }
 
 /* COMEÇO FOOTER */
 .footer-content{
     width: 100%;
-    background-color: #1a2235;
+    background-color: #243455;
 }
 .footer-rows{
     padding-top: 0.3vw;
@@ -1414,7 +1501,7 @@ nav{
     width: 90%;
 }
 .footer-rights-text{
-    color: aliceblue;
+    color: #f4f4f4;
     margin: 0.5vw auto;
     align-self: center;
     font-size: 1vw;
